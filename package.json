@@ -1,0 +1,26 @@
+{
+  "name": "thor-io.vnext.boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MagnusThor/thor-io.vnext.boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MagnusThor/thor-io.vnext.boilerplate/issues"
+  },
+  "homepage": "https://github.com/MagnusThor/thor-io.vnext.boilerplate#readme",
+  "dependencies": {
+    "@types/node": "^8.5.1",
+    "@types/reflect-metadata": "0.0.5",
+    "express": "^4.16.2",
+    "express-ws": "^3.0.0",
+    "thor-io.vnext": "^1.4.9"
+  }
+}
