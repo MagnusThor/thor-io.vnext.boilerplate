@@ -6,6 +6,8 @@ import {
     CanSet
 } from 'thor-io.vnext'
 
+
+
 @ControllerProperties("mycontroller")
 export class MyController extends ThorIO.Controller {
     
@@ -21,6 +23,9 @@ export class MyController extends ThorIO.Controller {
         // will back what sent to callee
         this.invoke(data, "invokeAndReturn");
     }
+
+   
+
 
     @CanInvoke(true)
     invokeAndSendToAll(data: any) {

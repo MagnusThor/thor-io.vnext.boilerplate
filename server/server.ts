@@ -5,17 +5,17 @@ let app = express();
 var thorio = require("thor-io.vnext").ThorIO;
 
 // import your controllers gere
+import {ChatController} from '../server/controllers/ChatController'
+import {RocketController} from '../server/controllers/RocketController'
 import {MyController} from '../server/controllers/MyController'
-
 
 var thorIO = new thorio.Engine(
     [
-        MyController,
-  
+        ChatController,
+        RocketController,
+        MyController
     ]
 ); 
-
-
 
 var expressWs = require("express-ws")(app);
 
@@ -29,4 +29,4 @@ app.ws("/", function (ws, req) {
 var port = process.env.PORT || 1337;
 app.listen(port);
 
-console.log("thor-io is serving on ",port.toString());
+console.log("thor-io is serving on ", port.toString());
